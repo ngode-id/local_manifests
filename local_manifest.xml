@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="ngode"
+            fetch="ssh://git@github.com/ngode-id" />
+
+    <!-- Device trees -->
+    <project name="android_device_xiaomi_ginkgo" path="device/xiaomi/ginkgo" revision="main" remote="ngode" />
+
+    <!-- Vendor trees -->
+    <project name="android_vendor_xiaomi_ginkgo" path="vendor/xiaomi/ginkgo" revision="main" remote="ngode" />
+    <project name="android_vendor_miuicamera_ginkgo" path="vendor/miuicamera" revision="dot11" remote="ngode" />
+
+    <!-- Kernel tree and clang -->
+    <project name="android_kernel_xiaomi_ginkgo" path="kernel/xiaomi/ginkgo" revision="main" remote="ngode" />
+    <project name="ThankYouMario/proprietary_vendor_qcom_sdclang" path="prebuilts/clang/host/linux-x86/clang-sdllvm" revision="ruby-12" remote="github" />
+</manifest>
